@@ -133,7 +133,7 @@ public class GUIShopEvents implements Listener {
     public ItemStack getConfirmButton(ItemStack itemStack) {
         ItemStack confirmButton = deepCloneItemStack(itemStack);
         confirmButton.setAmount(1);
-
+        confirmButton.setType(Material.LIME_CONCRETE);
         ItemMeta meta = confirmButton.getItemMeta();
         if (meta == null) return null;
         List<String> lore = meta.getLore();
@@ -147,7 +147,6 @@ public class GUIShopEvents implements Listener {
         meta.setDisplayName(buttonName);
         meta.getPersistentDataContainer().set(key, PersistentDataType.STRING,"CONFIRM_BUTTON");
 
-        confirmButton.setType(Material.LIME_CONCRETE);
         confirmButton.setItemMeta(meta);
 
         return confirmButton;

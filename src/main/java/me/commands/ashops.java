@@ -98,11 +98,13 @@ public class ashops implements TabExecutor {
 
         if (args[0].equalsIgnoreCase("open")) {
             if (args.length == 2) {
-                if (!player.hasPermission("advancedshops.open." + args[1])) {
-                    String message = color(plugin.getConfig().getString("Messages.No permissions"));
-                    player.sendMessage("§6[AdvancedShops] " + message);
-                    player.sendMessage("§cPermission required: " + "§eadvancedshops.open." + args[1]);
-                    return false;
+                if (!player.hasPermission("advancedshops.open.*")) {
+                    if (!player.hasPermission("advancedshops.open." + args[1])) {
+                        String message = color(plugin.getConfig().getString("Messages.No permissions"));
+                        player.sendMessage("§6[AdvancedShops] " + message);
+                        player.sendMessage("§cPermission required: " + "§eadvancedshops.open." + args[1]);
+                        return false;
+                    }
                 }
                 shopUtilities.openShop(player, args[1], true,player);
                 return false;

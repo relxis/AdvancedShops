@@ -32,6 +32,7 @@ public class ShopUtilities {
         player.sendMessage("§6- §e/ashops edit <shopName> §a- Edit the contents of an existing shop.");
         player.sendMessage("§6- §e/ashops delete <shopName> §a- Delete an existing shop.");
         player.sendMessage("§6- §e/ashops list §a- List all existing shops.");
+        player.sendMessage("§6- §e/ashops reload §a- Reload the configuration file.");
     }
 
     public String getInvalidMessage() {
