@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="AdvancedShops">
+    <output-path>$PROJECT_DIR$/../spigot 1.19.4/plugins</output-path>
+    <root id="archive" name="AdvancedShops.jar">
+      <element id="module-output" name="AdvancedShops" />
+    </root>
+  </artifact>
+</component>
