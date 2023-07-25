@@ -1,9 +1,9 @@
 name: AdvancedShops
-version: '1.0.0'
+version: '1.0.1'
 main: me.relxis.AdvancedShops
 api-version: '1.14'
 depend: [Vault]
 commands:
   advancedshops:
-    description: test
+    description: AdvancedShops commands.
     aliases: [ashops]

@@ -8,7 +8,6 @@ import org.bukkit.inventory.Inventory;
 
 import java.io.IOException;
 import java.util.*;
-import java.util.stream.Collectors;
 
 import static me.relxis.AdvancedShops.plugin;
 import static me.utilities.FormatUtilities.color;

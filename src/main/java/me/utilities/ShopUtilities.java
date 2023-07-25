@@ -24,7 +24,7 @@ public class ShopUtilities {
     public void help(Player player) {
 
 
-        player.sendMessage("§6[AdvancedShops] §aversion 1.0.0");
+        player.sendMessage("§6[AdvancedShops] §aversion 1.0.1");
         player.sendMessage("§6- §e/ashops help §a- Open the help page.");
         player.sendMessage("§6- §e/ashops create <shopName> <size> §a- Create a shop with the specified name.");
         player.sendMessage("§6- §e/ashops open <shopName> §a- Open an existing shop.");
